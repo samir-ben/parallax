@@ -1,0 +1,116 @@
+/* éléments généraux */
+* {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+	height: 1000px;
+	list-style-type: none;
+}
+
+.container-fluid {
+	padding: 0;
+
+}
+
+body {
+	background-color: black;
+	overflow: hidden;		
+	} 
+
+.mobile {
+	display: none;
+}
+
+
+/* éléments graphiques */
+.layer {
+	position: absolute;
+ 	height: 1000px; 	
+}
+
+.fond {
+	position: relative;
+	margin : 0 auto;
+}
+.lampe {
+	position: absolute;
+	top : 30px;
+	margin : 0 auto;
+}
+.lampe_bas {
+	position: absolute;
+	top : 70px;
+	margin : 0 auto;
+}
+.nom {
+	position: absolute;
+	background-attachment: fixed;
+	top: 450px;
+	left: 450px;
+	text-align: center;
+	width: 100px;
+	height: 10px;
+	margin : 0 auto;
+}
+.eclats_bas_droite {
+	position: absolute;
+	margin : 0 auto;
+	top: 450px;
+	left: 100px;
+	width: 600px;
+}
+
+.eclat_bas_gauche {
+	position: absolute;
+	margin : 0 auto;
+	width: 500px;
+	top: 300px;
+	left: 500px;
+}
+
+.particule {
+	position: absolute;
+	margin : 0 auto;
+	top: 100px;
+	left: 500px;
+	width: 400px;
+}
+
+.eclat_gros {
+	position: absolute;
+	margin : 0 auto;
+	top: 300px;
+	width: 700px;
+}
+.bordure {
+	position: absolute;
+	top: 570px;
+	margin : 0 auto;
+}
+
+/* -----------------------------------/
+              Media query
+/------------------------------------*/
+  @media all and (max-width: 600px)
+{
+ 	#scene {
+ 		display: none;
+ 	}
+	.mobile {
+		display:inline;
+	}
+    .lampe {
+		position: absolute;
+		top: 35px;
+		margin : 0 auto;
+	}
+	.lampe_bas {
+		position: absolute;
+		top: 15px;
+		margin : 0 auto;
+	}
+	.bordure {
+		display: none ;
+	}
+}

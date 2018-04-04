@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Parallax SAMIR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro" rel="stylesheet"> 
+</head>
+
+<body>
+  <!-- Animation version mobile -->
+  <div id="container" class="container-fluid mobile"> 
+      <div id="scene_mobile" class="scene ">
+        <div class="layer" data-depth="0.1"><img src="img/fond5.png" class="img-fluid fond"></div>
+        <div class="layer" data-depth="0.15"><img src="img/lampe_haut.png" class="img-fluid lampe"></div>
+        <div class="layer" data-depth="0.1"><img src="img/lampe_bas.png" class="img-fluid lampe_bas"></div>
+      </div>
+      <button type="button" class="btn btn-dark bouton text-center">Entrer</button>
+  </div>
+
+  <!-- Animation version Desktop -->
+  <div id="container" class="container-fluid basic"> 
+      <div id="scene" class="scene ">
+        <div class="layer" data-depth="0.15"><img src="img/fond5.png" class="img-fluid fond"></div>
+        <div class="layer" data-depth="0.30"><img src="img/lampe_haut.png" class="img-fluid lampe"></div>
+        <div class="layer" data-depth="0.15"><img src="img/lampe_bas.png" class="img-fluid lampe_bas"></div>
+        <div class="layer" data-depth="0.45"><img src="img/eclats_bas_droite.png" class="img-fluid eclats_bas_droite"></div>
+        <div class="layer" data-depth="0.45"><img src="img/eclat_gros2.png" class="img-fluid eclat_gros"></div> 
+        <div class="layer" data-depth="0.23"><img src="img/eclat_bas_gauche.png" class="img-fluid eclat_bas_gauche"></div>
+        <div class="layer" data-depth="0.20"><img src="img/bordure.png" class="img-fluid bordure"></div>
+      </div>
+      <button type="button" class="btn btn-dark bouton text-center">Entrer</button>
+  </div>
+
+
+ <!-- Scripts -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js'></script><script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js'></script>
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/header.js"></script>
+   <script type="text/javascript" src="../js/skrollr.min.js"></script>
+  <script src="js/parallax.js"></script>
+  <script>
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
+  var scene_mobile = document.getElementById('scene_mobile');
+  var parallax_mobile = new Parallax(scene_mobile);
+  </script>
+
+</body>
+</html>
